@@ -1,0 +1,41 @@
+Launchpad Build Log:
+
+[2017.01.24]
+-完成Store的UI。裝Google Admob SDK。
+
+[2017.01.26]
+-在載入AudioClip時增加Loading Scene
+-完成Google Admob banner整合
+-接完In App Purchase的API
+-在iTunes Connect增加In App Purchase項目
+-重新整理Store的UI
+
+[2017.02.01]
+-繼續串In App Purchase的API
+-整理In App Purchase、Slots、AdMob的載入順序
+
+[2017.02.08]
+-改掉AdMob不會被載入的Bug
+-iOS測試In App Purchase (用Sandbox)，成功
+-解決插拔耳機聲音又會從小聽筒出來的Bug (每個frame都call ForceToSpeaker()，但還是沒影響Performance)
+
+[2017.02.15]
+-增加Shine Right Studio Logo
+-增加Record Button
+
+[2017.02.24]
+-本來想要重做成Native App，但放棄了…
+-改成方形Slots，移除Buy Slots的In App Purchase
+-增加為25個Slots
+-新增Label功能
+
+[2017.02.25]
+-上架
+
+[2017.03.01]
+-新增App Preview影片
+
+To Do List:
+-Upload to SourceTree
+-In App Purchase (UI: Failed, Successful)
+-Persistent Data of In App Purchases
