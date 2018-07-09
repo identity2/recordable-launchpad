@@ -35,6 +35,10 @@ Launchpad Build Log:
 [2017.03.01]
 -新增App Preview影片
 
+[2018.07.09]
+-更新logo
+
+
 To Do List:
 -Upload to SourceTree
 -In App Purchase (UI: Failed, Successful)
