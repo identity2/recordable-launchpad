@@ -67,9 +67,6 @@ public class SoundboardSlot : MonoBehaviour
 	void OnDestroy()
 	{
 		SoundboardManager.stateChangedEvent -= StateChanged;
-
-		//save (serialize) AudioClipq to local disk
-		AudioDataSaver.SaveAudioClipToDisk(_audioSouce.clip, slotNum.ToString() + ".dat");
 	}
 
 	//set different touch down action for different states
@@ -194,6 +191,9 @@ public class SoundboardSlot : MonoBehaviour
 		//create a new AudioClip and set the data from the clipped samples
 		_audioSouce.clip = AudioClip.Create("new", clipSamples.Length, 1, 44100, false);
 		_audioSouce.clip.SetData (clipSamples, 0);
+
+		//save (serialize) AudioClipq to local disk
+		AudioDataSaver.SaveAudioClipToDisk(_audioSouce.clip, slotNum.ToString() + ".dat");
 
 		//change state
 		SoundboardManager.ChangeState(SoundboardManager.SoundboardState.Default);
